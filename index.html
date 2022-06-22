@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aqui linkeo la hoja de estilos CSS "style", hay que tener ojo que se escriba de la misma manera-->
+    <!-- Esto es Bootstrap alojado en un servidor por lo tanto necesitamos internet para trabajar con sus librerías, pero es más cómodo por el momento -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+     crossorigin="anonymous">
+     <!--Custom CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Primera Entrega</title>
+</head>
+<body>
+    <!--Siempre el orden del body consiste en un Header, un   y un Footer sucesivamente-->
+    <header>
+    <!--Aquí empieza el navbar, en general está hecho con Bootstrap, se me hizo difícil modificar un par de cosas con CSS por tema de superposición de importancia contra Bootstrap o por no ser lo suficientemente específico, pero no generó problemas en lo práctico-->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="./img/Ilustración-sin-título (2).PNG" class="imglog" width="50px" height="50px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+             aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Inicia Sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Hasta aquí es el navbar con Bootstrap-->
+    </header>
+    <main>
+    <!--JUMBOTRON-->
+        <section class="container-fluid">
+            <div class="row"> <!--tuve que agregar todo dentro de este divo con la clase row-->
+                <!--Grid tiene un formato de 12 columnas y debo seleccionar cuantas de ellas
+                utilizará cada uno de estos divs, en este caso quiero darle la mitad a cada uno-->         
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8">
+                    <!--varias cosas-->
+                
+                    <h1 class=" ms-5 mb-5 mt-5" >Conviértete en nuestro distribuidor oficial</h1>
+                    <p class="ms-5">Estamos buscando personas interesadas en vender nuestros productos en la Región Metropólitana </p>
+                    <h6 class="ms-5">¡Consigue hasta un 30% de descuento!</h6>
+                    <input class="ms-5 type="text" placeholder="Ingresa tu correo aquí">           
+                    <button class="ms-5 mt-5">Enviar</button>
+                    <p class="ms-5">Nuestro equipo se contactará contigo dentro de las próximas 24 horas</p>
+                </div>
+                <div class=" container-fluid col-12 col-sm-3 col-md-4 col-lg-4">
+                    <!--imagen de la parte derecha de la pagina-->
+                        <img class="m-auto" src="./img/20210628IMG_7051-EditPapayas Olivier Altas.jpg" alt="" 
+                        width="300px" height="300px" href="https://www.instagram.com/papayasolivier/?hl=es">
+                    </div>            
+            </div>
+        </section>
+        <section class="container-fluid bg-light py-5 px-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/20210628IMG_7058-EditPapayas Olivier Altas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Licor de Nísperos</h5>
+                          <p class="card-text">Un lote de 400 botellas anuales producidas por la Nonna Olga. Ella recibe a sus visitas con este licor de nísperos cosechados en el patio de su casa. Desde hoy lo puedes tener tú</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/20210628IMG_7037-EditPapayas Olivier Altas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Néctar de Papayas</h5>
+                          <p class="card-text">El afamado Néctar de Papayas siempre será un buen invitado en tu mesa para compartir con amigos y familia. 
+                            Cuenta la leyenda que quién toma este néctar, mas temprano que tarde vuelve al Valle de Elqui
+                          </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/20210628IMG_7068-EditPapayas Olivier Altas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Pisco Lan Antu</h5>
+                          <p class="card-text">Elaborado con una selección exclusiva de uvas Moscatel de Austria y Pedro Ximénez. 
+                            Producido y embotellado el día 02 de Julio de 2019. Momento exacto en que se vio un Eclipse Solar en el Valle de Elqui  </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/20210628IMG_7075-EditPapayas Olivier Altas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Papayas Confitadas</h5>
+                          <p class="card-text">Exquisita papaya elaborada bajo un largo proceso de cocción al vapor para retirar su cáscara
+                            y enfríar en contacto con azúcar. Excelente suplemento deportivo alto en calorías para especialistas en Trekking, montañismo, Cross Country u otros.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          
+        </section>
+    </main>
+    <footer clas="container-fluid">
+      <!--De aquí en adelante tengo hecho el Footer-->
+      <div class="row p-5 bg-dark text-white">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h4 mb-2">Dónde estamos</p>
+            <p class="text-secondary">Km 50, Ruta 41, Valle de Elqui</p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h6 mb-1">Siguenos en Redes Sociales</p>
+            <a class="text-secondary" href="https://www.instagram.com/papayasolivier/?hl=es">Instagram</a> <br>
+            <a class="text-secondary" href="https://es-la.facebook.com/pages/category/Interest/Papayas-Olivier-163049500383656/">Facebook</a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h6 mb-2">Terminos y Condiciones</pc>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h6 mb-2">Política y Privacidad</p>
+        </div>
+      </div>
+      <!--Hasta aquí es el Footer-->
+    </footer>
+</body>
+</html>
